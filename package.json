@@ -15,8 +15,12 @@
     "react-ga": "^2.7.0",
     "react-mdl": "^1.11.0",
     "react-router-dom": "^5.1.2",
+<<<<<<< HEAD
     "react-scripts": "3.2.0",
     "serve": "^11.3.0"
+=======
+    "react-scripts": "3.2.0"
+>>>>>>> f83541caeb91608cd613f8864ef115d7f3734a3b
   },
   "scripts": {
     "start": "react-scripts start",
