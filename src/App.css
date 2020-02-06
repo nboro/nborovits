@@ -211,3 +211,28 @@ footer span{
     -ms-user-select: none;
     user-select: none;
 }
+
+.btnn{
+  display: block;
+  width: 100%;
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+  border-radius: .3rem;
+  color: #fff;
+  background-color: #39D4BF;
+  border-color: #39D4BF;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid transparent;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btnn:hover{
+  color: #fff;
+  background-color: #1cb1c9;
+  border-color: #117a8b;
+  text-decoration: none;
+}

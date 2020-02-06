@@ -4,6 +4,7 @@ import Education from './education'
 import Experience from './experience'
 import Skills from './skills'
 import logo from '../img/nborovits250.jpg';
+import cv from '../files/borovits_cv.pdf';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 
 class Resume extends Component {
@@ -33,19 +34,21 @@ class Resume extends Component {
                         <h5>Email</h5>
                         <p className="nsel">nemaniaborovits@gmail.com</p>
                         <hr />
+                        <h5>You can also check my CV from the link below:</h5>
+                        <a target={"_blank"} className="btnn" href={cv}>Borovits CV</a>
                     </Cell>
                     <Cell className="resume-right-col" col={8}>
                         <h2>Education</h2>
                         <Education 
                             startYear={2018}
                             endYear={2020}
-                            schoolName="Jheronimus Academy of Data Science"
+                            schoolName="Jheronimus Academy of Data Science, the Netherlands"
                             schoolDescription="MSc Data Science & Entrepreneurship"
                         />
                         <Education 
                             startYear={2006}
                             endYear={2012}
-                            schoolName="University Of Macedonia"
+                            schoolName="University Of Macedonia, Greece"
                             schoolDescription="BSc Applied Informatics"
                         />
                         <hr />
