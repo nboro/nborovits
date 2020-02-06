@@ -34,7 +34,7 @@ class Resume extends Component {
                         <h5>Email</h5>
                         <p className="nsel">nemaniaborovits@gmail.com</p>
                         <hr />
-                        <h5>You can also check my CV from the link below:</h5>
+                        <h5>You can check a full version of my CV from the link below:</h5>
                         <a target={"_blank"} className="btnn" href={cv}>Borovits CV</a>
                     </Cell>
                     <Cell className="resume-right-col" col={8}>
