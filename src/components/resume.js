@@ -30,7 +30,7 @@ class Resume extends Component {
                         <h5>Address</h5>
                         <p className="nsel">Uilenburg 7, 5211 EV 's-Hertogenbosch</p>
                         <h5>Phone</h5>
-                        <p className="nsel">+31 640604480, +30 6981894046</p>
+                        <p className="nsel">+31 640604480</p>
                         <h5>Email</h5>
                         <p className="nsel">nemaniaborovits@gmail.com</p>
                         <hr />
