@@ -46,22 +46,7 @@ class Landing extends Component {
                         </div>
                     </Col>                    
                 </Row>                
-                </Container>
-                <div className="footer">
-                
-                    <Container>
-                        <Row>
-                            <Col>
-                                <div className="text-center">
-                                    <p>Powered by
-                                    <span>Nemania Borovits</span></p>
-                                    <p>&copy; Copyright 2020 All Rights Reserved</p>
-                                </div>
-                            </Col>
-                        </Row>
-                    </Container>                    
-                
-                </div>
+                </Container>                
             </div>
         )
     }

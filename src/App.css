@@ -100,6 +100,16 @@
   padding: 15px;
 }
 
+.contacts .res p{
+  color: white;
+  font-size: 24px;
+  text-align: justify;
+  margin: 0 auto;
+  display: block;
+  padding: 15px;
+  text-align: center;
+}
+
 .contacts hr {
   border-top: 5px dotted white;
   width: 50%;

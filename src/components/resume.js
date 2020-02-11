@@ -3,9 +3,9 @@ import { Grid, Cell } from 'react-mdl';
 import Education from './education'
 import Experience from './experience'
 import Skills from './skills'
-import logo from '../img/nborovits250.jpg';
+// import logo from '../img/nborovits250.jpg';
 import cv from '../files/borovits_cv.pdf';
-import { Container, Row, Col, Image } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 class Resume extends Component {
     render(){
@@ -14,9 +14,13 @@ class Resume extends Component {
                 <Container>
                     <Row>
                         <Col>
-                            <div className="text-center">
-                                <Image src={logo} className="avatar-img" alt="Nemania Borovits" roundedCircle />
+                        <div className="contacts">
+                            <h2 style={{paddingTop:'10px'}}>About me</h2>
+                            <hr />
+                            <div className="res">
+                                <p> </p>
                             </div>
+                        </div>
                         </Col>
                     </Row>
                 </Container>
@@ -25,7 +29,7 @@ class Resume extends Component {
                         <h2>Nemania Borovits</h2>
                         <h4>Machine Learning Engineer</h4>
                         <hr />
-                        <p>Hi! I am Nemania! I am from Thessaloniki, Greece and i currently live in Den Bosch, the Netherlands. My ever-growing will to tackle all kinds of problems by developing practical solutions, especially to the business world, initiated my interest for the domain of Data Science. That is why i applied to the joint program of TU/E and Tilburg University <i>Data Science and Entrepreneurship</i>. Currently, i am employed at Tilburg University as Research Assistant for my master thesis in the domain of NLP.</p>
+                        <p>Hi! I am Nemania! I am from Thessaloniki, Greece and I currently live in Den Bosch, the Netherlands. My ever-growing will to tackle all kinds of problems by developing practical solutions, especially to the business world, initiated my interest for the domain of Data Science. That is why after working for 5 years as a web developer I applied to the joint program of TU/E and Tilburg University <i>Data Science and Entrepreneurship</i>. Currently, I am employed at Tilburg University as Research Assistant for my master thesis in the domain of NLP.</p>
                         <hr />
                         <h5>Address</h5>
                         <p className="nsel">Uilenburg 7, 5211 EV 's-Hertogenbosch</p>
@@ -34,7 +38,7 @@ class Resume extends Component {
                         <h5>Email</h5>
                         <p className="nsel">nemaniaborovits@gmail.com</p>
                         <hr />
-                        <h5>You can check a full version of my CV from the link below:</h5>
+                        <h5>You can check my detailed CV from the link below:</h5>
                         <a target={"_blank"} className="btnn" href={cv}>Borovits CV</a>
                     </Cell>
                     <Cell className="resume-right-col" col={8}>
@@ -84,22 +88,7 @@ class Resume extends Component {
                             progress={85} 
                         />
                     </Cell>
-                </Grid>
-                <div className="footer">
-                
-                    <Container>
-                        <Row>
-                            <Col>
-                                <div className="text-center">
-                                    <p>Powered by
-                                    <span>Nemania Borovits</span></p>
-                                    <p>&copy; Copyright 2020 All Rights Reserved</p>
-                                </div>
-                            </Col>
-                        </Row>
-                    </Container>                    
-                
-                </div>
+                </Grid>                
             </div>
         )
     }
