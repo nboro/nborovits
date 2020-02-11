@@ -2,8 +2,9 @@ import React from 'react';
 
 import './App.css';
 import {Layout, Header, Navigation, Drawer} from 'react-mdl'
+import { Container, Row, Col } from 'react-bootstrap';
 import Main from './components/main';
-import Footer from './components/footer';
+// import Footer from './components/footer';
 import {Link} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ReactGA from 'react-ga'
@@ -13,9 +14,12 @@ function initializeReactGA() {
   ReactGA.pageview('/homepage');
 }
 
-
+function getYear() {
+  return new Date().getFullYear();
+}
 function App() {
   initializeReactGA()
+  getYear()
   return (
     <div>
       <Layout className="landing-grid">
@@ -37,7 +41,21 @@ function App() {
         </Drawer>        
         
           <Main/>
-          <Footer/>
+          <div>
+                <footer>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <div className="text-center">
+                                    <p>Powered by
+                                    <span>Nemania Borovits</span></p>
+                                    <p>&copy; Copyright {this.getYear()} All Rights Reserved</p>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Container>                    
+                </footer>
+            </div>
                 
       </Layout>
       
