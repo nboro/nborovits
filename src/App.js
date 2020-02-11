@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css';
 import {Layout, Header, Navigation, Drawer} from 'react-mdl'
 import Main from './components/main';
-import Footer from './components/footer';
+// import Footer from './components/footer';
 import {Link} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ReactGA from 'react-ga'
@@ -37,7 +37,7 @@ function App() {
         </Drawer>        
         
           <Main/>
-          <Footer/>
+          
                 
       </Layout>
       
