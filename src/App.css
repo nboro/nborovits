@@ -134,17 +134,17 @@
 
 /*footer*/
 
-footer{
+.footer{
   margin-top: 50px;
 }
 
-footer p{
+.footer p{
   color: white;
   font-size: 16px;
   margin-bottom: 0!important;
 }
 
-footer span{
+.footer span{
   color: white;
   text-decoration: underline;
   padding-left: 5px;

@@ -9,8 +9,8 @@ class Footer extends Component {
 
     render() {
         return(
-            <div>
-                <footer>
+            <div className="footer">
+                
                     <Container>
                         <Row>
                             <Col>
@@ -22,7 +22,7 @@ class Footer extends Component {
                             </Col>
                         </Row>
                     </Container>                    
-                </footer>
+                
             </div>
         )
     }
