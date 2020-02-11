@@ -3,9 +3,9 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 class Footer extends Component {
 
-    getYear() {
-        return new Date().getFullYear();
-    }
+    // getYear() {
+    //     return new Date().getFullYear();
+    // }
 
     render() {
         return(
@@ -17,7 +17,7 @@ class Footer extends Component {
                                 <div className="text-center">
                                     <p>Powered by
                                     <span>Nemania Borovits</span></p>
-                                    <p>&copy; Copyright {this.getYear()} All Rights Reserved</p>
+                                    <p>&copy; Copyright 2020 All Rights Reserved</p>
                                 </div>
                             </Col>
                         </Row>
