@@ -19,7 +19,7 @@ function getYear() {
 }
 function App() {
   initializeReactGA()
-  getYear()
+  
   return (
     <div>
       <Layout className="landing-grid">
@@ -49,7 +49,7 @@ function App() {
                                 <div className="text-center">
                                     <p>Powered by
                                     <span>Nemania Borovits</span></p>
-                                    <p>&copy; Copyright {this.getYear()} All Rights Reserved</p>
+                                    <p>&copy; Copyright {getYear()} All Rights Reserved</p>
                                 </div>
                             </Col>
                         </Row>
