@@ -21,8 +21,14 @@ class Footer extends Component {
                                 </div>
                             </Col>
                         </Row>
-                    </Container>                    
-                
+                        <Row>
+                            <Col>
+                                <div>
+                                    <p style={{display:'none'}}>This is a test</p>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Container>               
             </div>
         )
     }
