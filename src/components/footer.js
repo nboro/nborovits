@@ -14,7 +14,7 @@ class Footer extends Component {
                     <Container>
                         <Row>
                             <Col>
-                                <div style={{paddingBottom:'50px'}} className="text-center">
+                                <div style={{paddingBottom:'75px'}} className="text-center">
                                     <p>Powered by
                                     <span>Nemania Borovits</span></p>
                                     <p>&copy; Copyright 2020 All Rights Reserved</p>
