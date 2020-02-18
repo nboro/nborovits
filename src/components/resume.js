@@ -5,25 +5,12 @@ import Experience from './experience'
 import Skills from './skills'
 // import logo from '../img/nborovits250.jpg';
 import cv from '../files/borovits_cv.pdf';
-import { Container, Row, Col } from 'react-bootstrap';
+// import { Container, Row, Col } from 'react-bootstrap';
 
 class Resume extends Component {
     render(){
         return(
             <div style={{marginTop:'50px'}}>
-                <Container>
-                    <Row>
-                        <Col>
-                        <div className="contacts">
-                            <h2 style={{paddingTop:'10px'}}>About me</h2>
-                            <hr />
-                            <div className="res">
-                                <p> </p>
-                            </div>
-                        </div>
-                        </Col>
-                    </Row>
-                </Container>
                 <Grid>
                     <Cell col={4}>                        
                         <h2>Nemania Borovits</h2>
@@ -76,15 +63,19 @@ class Resume extends Component {
                             progress={95} 
                         />
                         <Skills
-                            skill="Supervised Learning"
+                            skill="Machine Learning"
                             progress={85} 
                         />
                         <Skills
-                            skill="Unsupervised Learning"
+                            skill="Deep Learning"
                             progress={80} 
                         />
                         <Skills
                             skill="NLP"
+                            progress={85} 
+                        />
+                        <Skills
+                            skill="Data Engineering"
                             progress={85} 
                         />
                     </Cell>

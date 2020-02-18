@@ -23,7 +23,7 @@ function App() {
             <Navigation>
                 <Link to="/resume">Resume</Link>
                 {/*<Link to="/aboutme">About Me</Link>*/}
-                <Link to="/projects">Projects</Link>
+                {/*<Link to="/projects">Projects</Link>*/}
                 <Link to="/contact">Contact</Link>
             </Navigation>
         </Header>
@@ -31,7 +31,7 @@ function App() {
             <Navigation>              
               <Link style={{fontWeight:'bold', fontSize:'18px',color:'white'}} to="/resume"><span className="icon"><i className="fa fa-file" aria-hidden="true" /></span><span style={{paddingLeft:'10px'}}>Resume</span></Link>
               {/*<Link style={{fontWeight:'bold', fontSize:'18px',color:'white'}} to="/aboutme"><span className="icon"><i className="fa fa-user-circle" aria-hidden="true" /></span><span style={{paddingLeft:'10px'}}>About Me</span></Link>*/}
-              <Link style={{fontWeight:'bold', fontSize:'18px',color:'white'}} to="/projects"><span className="icon"><i className="fa fa-check-circle" aria-hidden="true" /></span><span style={{paddingLeft:'10px'}}>Projects</span></Link>
+              {/*<Link style={{fontWeight:'bold', fontSize:'18px',color:'white'}} to="/projects"><span className="icon"><i className="fa fa-check-circle" aria-hidden="true" /></span><span style={{paddingLeft:'10px'}}>Projects</span></Link>*/}
               <Link style={{fontWeight:'bold', fontSize:'18px',color:'white'}} to="/contact"><span className="icon"><i className="fa fa-envelope-open" aria-hidden="true" /></span><span style={{paddingLeft:'10px'}}>Contact</span></Link>
             </Navigation> 
         </Drawer>        

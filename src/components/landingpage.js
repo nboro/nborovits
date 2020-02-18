@@ -21,7 +21,7 @@ class Landing extends Component {
                             <h1>Nemania Borovits</h1>
                             <h2>Machine Learning Engineer</h2>
                             <hr />
-                            <p>Python | Machine Learning | Supervised Learning | Unsupervised Learning | NLP | Data Engineering</p>
+                            <p>Python | Machine Learning | Deep Learning | NLP | Data Engineering</p>
                             <div className="social-links">                            
                                 {/* LinkedIn*/}
                                 <a href="https://www.linkedin.com/in/nemania-borovits-8306b812a/" rel="noopener noreferrer" target="_blank">
