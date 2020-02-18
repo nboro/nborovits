@@ -30,7 +30,7 @@ class Contact extends Component {
                                     <ListItem>
                                         <ListItemContent>
                                             <span className="fa fa-skype my-icon"></span>
-                                            <span className="nsel">&nbsp; nborovits</span>
+                                            <span className="nsel">&nbsp; Nemania Borovits</span>
                                         </ListItemContent>
                                     </ListItem>                                
                                 </List>

@@ -29,15 +29,15 @@ class Resume extends Component {
                         <h2>Nemania Borovits</h2>
                         <h4>Machine Learning Engineer</h4>
                         <hr />
-                        <p>Hi! I am Nemania! I am from Thessaloniki, Greece and I currently live in Den Bosch, the Netherlands. My ever-growing will to tackle all kinds of problems by developing practical solutions, especially to the business world, initiated my interest for the domain of Data Science. That is why after working for 5 years as a web developer I applied to the joint program of TU/E and Tilburg University <i>Data Science and Entrepreneurship</i>. Currently, I am employed at Tilburg University as Research Assistant for my master thesis in the domain of NLP.</p>
+                        <p>Oh, Hi there! I am Nemania! I am from Thessaloniki, Greece and I currently live in Den Bosch, the Netherlands. My ever-growing will to tackle all kinds of problems by developing practical solutions, especially to the business world, initiated my interest for the domain of Data Science. That is why after working for 5 years as a web developer I applied to the joint program of TU/E and Tilburg University <i>Data Science and Entrepreneurship</i>. Currently, I am employed at Tilburg University as Research Assistant for my master thesis in the domain of NLP.</p>
                         <hr />
-                        <h5>Address</h5>
+                        {/*<h5>Address</h5>
                         <p className="nsel">Uilenburg 7, 5211 EV 's-Hertogenbosch</p>
                         <h5>Phone</h5>
                         <p className="nsel">+31 640604480</p>
                         <h5>Email</h5>
                         <p className="nsel">nemaniaborovits@gmail.com</p>
-                        <hr />
+                        <hr />*/}
                         <h5>You can check my detailed CV from the link below:</h5>
                         <a target={"_blank"} className="btnn" href={cv}>Borovits CV</a>
                     </Cell>
