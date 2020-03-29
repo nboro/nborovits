@@ -1,5 +1,5 @@
 import React from 'react';
-
+import HttpsRedirect from 'react-https-redirect'
 import './App.css';
 import {Layout, Header, Navigation, Drawer} from 'react-mdl'
 import Main from './components/main';
@@ -17,6 +17,7 @@ function App() {
   initializeReactGA()
   
   return (
+    <HttpsRedirect>
     <div>
       <Layout className="landing-grid">
         <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">Nemania Borovits</Link> } scroll>
@@ -42,7 +43,7 @@ function App() {
       </Layout>
       
     </div>
-    
+    </HttpsRedirect>
   );
 }
 
