@@ -23,7 +23,7 @@ class Contact extends Component {
         
                                     <ListItem>
                                         <ListItemContent>
-                                            <span className="fa fa-envelope-square my-icon"></span>       <span className="nsel">&nbsp;nemaniaborovits@gmail.com</span>   
+                                            <span className="fa fa-envelope-square my-icon"></span>       <span className="nsel">&nbsp;nborovits@gmail.com</span>   
                                         </ListItemContent>
                                     </ListItem>
         
