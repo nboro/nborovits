@@ -2,4 +2,4 @@
 
 My personal website. In order to create it i used React and some react modules like react bootstrap and react mdl. You can check the result at the link below:
 
-[nborovits.com](http://nborovits.com)
+[nborovits.com](https://nborovits.com)
