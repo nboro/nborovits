@@ -19,7 +19,7 @@ class Landing extends Component {
                     <Col>
                         <div className="banner-text">
                             <h1>Nemania Borovits</h1>
-                            <h2>Machine Learning Engineer</h2>
+                            <h2>Data Scientist</h2>
                             <hr />
                             <p>Python | Machine Learning | Deep Learning | NLP | Data Engineering</p>
                             <div className="social-links">                            

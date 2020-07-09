@@ -14,7 +14,7 @@ class Resume extends Component {
                 <Grid>
                     <Cell col={4}>                        
                         <h2>Nemania Borovits</h2>
-                        <h4>Machine Learning Engineer</h4>
+                        <h4>Data Scientist</h4>
                         <hr />
                         <p>Oh, Hi there! I am Nemania! I am from Thessaloniki, Greece and I currently live in Den Bosch, the Netherlands. My ever-growing will to tackle all kinds of problems by developing practical solutions, especially to the business world, initiated my interest for the domain of Data Science. That is why after working for 5 years as a web developer I applied to the joint program of TU/E and Tilburg University <i>Data Science and Entrepreneurship</i>. Currently, I am employed at Tilburg University as Research Assistant for my master thesis in the domain of NLP.</p>
                         <hr />
@@ -46,8 +46,8 @@ class Resume extends Component {
                         <h2>Experience</h2>
                         <Experience
                             startYear={2019}
-                            endYear=""
-                            jobName="Machine Learning Engineer"
+                            endYear="2020"
+                            jobName="Data Scientist"
                             jobDescription="NLP Research Assistant, Tilburg University" 
                         />
                         <Experience
@@ -68,7 +68,7 @@ class Resume extends Component {
                         />
                         <Skills
                             skill="Deep Learning"
-                            progress={80} 
+                            progress={85} 
                         />
                         <Skills
                             skill="NLP"
