@@ -16,7 +16,7 @@ class Resume extends Component {
                         <h2>Nemania Borovits</h2>
                         <h4>Data Scientist</h4>
                         <hr />
-                        <p>Oh, Hi there! I am Nemania! I am from Thessaloniki, Greece and I currently live in Den Bosch, the Netherlands. My ever-growing will to tackle all kinds of problems by developing practical solutions, especially to the business world, initiated my interest for the domain of Data Science. That is why after working for 5 years as a web developer I applied to the joint program of TU/E and Tilburg University <i>Data Science and Entrepreneurship</i>. Currently, I am employed at Tilburg University as Research Assistant for my master thesis in the domain of NLP.</p>
+                        <p>Hi there! I am Nemania! I am from Thessaloniki, Greece and I currently live in Den Bosch, the Netherlands. My ever-growing will to tackle all kinds of problems by developing practical solutions initiated my interest for the domain of Data Science. That is why after working for 5 years as a web developer I applied to the joint program <i>Data Science and Entrepreneurship</i> offered by the TU/E and the Tilburg University. For the past academic year I was employed as a research assistant by the Tilburg University for my thesis. For the time being, I have successfully finished my Data Science MSc studies and I am exploring career options in order to apply the academic knowledge I have acquired in the business world.</p>
                         <hr />
                         {/*<h5>Address</h5>
                         <p className="nsel">Uilenburg 7, 5211 EV 's-Hertogenbosch</p>
