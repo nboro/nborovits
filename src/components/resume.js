@@ -46,15 +46,27 @@ class Resume extends Component {
                         <h2>Experience</h2>
                         <Experience
                             startYear={2019}
-                            endYear="2020"
-                            jobName="Data Scientist"
-                            jobDescription="NLP Research Assistant, Tilburg University" 
+                            endYear={2020}
+                            jobName="NLP Data Scientist / Research Assistant"
+                            jobDescription="Tilburg University" 
+                        />
+                        <Experience
+                            startYear={2016}
+                            endYear={2018}
+                            jobName="Data Engineer"
+                            jobDescription="Mouzenidis Group" 
+                        />
+                        <Experience
+                            startYear={2014}
+                            endYear={2016}
+                            jobName="Full Stack Developer"
+                            jobDescription="Mouzenidis Group" 
                         />
                         <Experience
                             startYear={2013}
-                            endYear={2018}
-                            jobName="Senior Web Developer"
-                            jobDescription="Mouzenidis Group" 
+                            endYear={2014}
+                            jobName="Junior Web Developer"
+                            jobDescription="Mouzenidis Travel" 
                         />
                         <hr />
                         <h2>Skills</h2>
