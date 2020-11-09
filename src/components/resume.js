@@ -53,13 +53,13 @@ class Resume extends Component {
                         <Experience
                             startYear={2020}
                             // endYear={2020}
-                            jobName="Data Scientist / Research Assistant"
+                            jobName="Data Scientist - Research Assistant"
                             jobDescription="Jheronimus Academy of Data Science" 
                         />
                         <Experience
                             startYear={2019}
                             endYear={2020}
-                            jobName="NLP Data Scientist / Research Assistant"
+                            jobName="Data Scientist - Research Assistant"
                             jobDescription="Tilburg University" 
                         />
                         <Experience
