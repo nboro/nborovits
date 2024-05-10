@@ -84,23 +84,23 @@ class Resume extends Component {
                         <h2>Skills</h2>
                         <Skills
                             skill="Python"
-                            progress={95} 
+                            progress={100} 
                         />
                         <Skills
                             skill="Machine Learning"
-                            progress={85} 
+                            progress={100} 
                         />
                         <Skills
                             skill="Deep Learning"
-                            progress={85} 
+                            progress={100} 
                         />
                         <Skills
                             skill="NLP"
-                            progress={85} 
+                            progress={100} 
                         />
                         <Skills
                             skill="Data Engineering"
-                            progress={85} 
+                            progress={95} 
                         />
                     </Cell>
                 </Grid>                
