@@ -14,9 +14,9 @@ class Resume extends Component {
                 <Grid>
                     <Cell col={4}>                        
                         <h2>Nemania Borovits</h2>
-                        <h4>Data Scientist</h4>
+                        <h4>Researcher & Data Scientist</h4>
                         <hr />
-                        <p>Hi there! I am Nemania! I am from Thessaloniki, Greece and I currently live in Den Bosch, the Netherlands. My ever-growing will to tackle all kinds of problems by developing practical solutions initiated my interest for the domain of Data Science. That is why after working for 5 years as a web developer I applied to the joint program <i>Data Science and Entrepreneurship</i> offered by the TU/E and the Tilburg University. For the past academic year I was employed as a research assistant by the Tilburg University for my thesis. For the time being, I am a PhD candidate in Data Engineering and AI for Privacy at Jheronimus Academy of Data Science in 's-Hertogenbosch, the Netherlands.</p>
+                        <p>Hi there! I am Nemania! I am a Data Scientist and a Researcher with a background in software and data engineering. After five years in industry in Greece, I pursued an MSc in Data Science & Entrepreneurship before transitioning to a PhD in Data Engineering and AI for Privacy, co-financed by KPN. My work spans privacy engineering, privacy-preserving AI and data governance, bridging research with industry applications. Currently, I am working as a Postdoctoral Researcher, I continue to pursue my passion for designing and developing AI-driven systems with impact in both industry and society.</p>
                         <hr />
                         {/*<h5>Address</h5>
                         <p className="nsel">Uilenburg 7, 5211 EV 's-Hertogenbosch</p>
@@ -32,7 +32,7 @@ class Resume extends Component {
                         <h2>Education</h2>
                         <Education 
                             startYear={2020}
-                            // endYear={}
+                            endYear={2024}
                             schoolName="Jheronimus Academy of Data Science, the Netherlands"
                             schoolDescription="PhD in Data Engineering and AI for Privacy"
                         />
@@ -50,6 +50,12 @@ class Resume extends Component {
                         />
                         <hr />
                         <h2>Experience</h2>
+                        <Experience
+                            startYear={2024}
+                            // endYear={2020}
+                            jobName="Postdoctoral Researcher"
+                            jobDescription="Tilburg University" 
+                        />
                         <Experience
                             startYear={2020}
                             // endYear={2020}
@@ -100,7 +106,7 @@ class Resume extends Component {
                         />
                         <Skills
                             skill="Data Engineering"
-                            progress={95} 
+                            progress={100} 
                         />
                     </Cell>
                 </Grid>                
