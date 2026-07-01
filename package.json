@@ -1,26 +1,14 @@
 {
   "name": "nborovits",
-  "version": "0.1.0",
-  "engines": {
-    "node": "12.x"
-  },
+  "version": "1.0.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "axios": "^0.21.2",
-    "bootstrap": "^4.5.0",
-    "emailjs-com": "^2.6.3",
-    "react": "^16.13.1",
-    "react-bootstrap": "^1.3.0",
-    "react-dom": "^16.13.1",
-    "react-ga": "^2.7.0",
-    "react-https-redirect": "^1.1.0",
-    "react-mdl": "^1.11.0",
-    "react-router-dom": "^5.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-helmet-async": "^2.0.5",
     "react-scripts": "5.0.1",
-    "serve": "^11.3.2"
+    "serve": "^14.2.3"
   },
   "scripts": {
     "start": "react-scripts start",

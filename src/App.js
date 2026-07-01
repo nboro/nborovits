@@ -1,50 +1,92 @@
 import React from 'react';
-import HttpsRedirect from 'react-https-redirect'
+import { Helmet } from 'react-helmet-async';
+import Sidebar from './components/layout/Sidebar';
+import Main from './components/layout/Main';
+import { SEO } from './data/seo';
+import { profile } from './data/profile';
+import { sections, legacyRoutes } from './data/navigation';
 import './App.css';
-import {Layout, Header, Navigation, Drawer} from 'react-mdl'
-import Main from './components/main';
-import Footer from './components/footer';
-import {Link} from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import ReactGA from 'react-ga'
 
-function initializeReactGA() {
-  ReactGA.initialize('UA-149851084-1');
-  ReactGA.pageview('/homepage');
-}
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    // Which accordion section is expanded. Default: first (About).
+    this.state = { open: sections[0].id };
+    this.openSection = this.openSection.bind(this);
+    this.toggleSection = this.toggleSection.bind(this);
+  }
 
-function App() {
-  initializeReactGA()
-  
-  return (
-    <HttpsRedirect>
-    <div>
-      <Layout className="landing-grid">
-        <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">Nemania Borovits</Link> } scroll>
-            <Navigation>
-                <Link to="/resume">Resume</Link>
-                {/*<Link to="/aboutme">About Me</Link>*/}
-                {/*<Link to="/projects">Projects</Link>*/}
-                <Link to="/contact">Contact</Link>
-            </Navigation>
-        </Header>
-        <Drawer className="landing-grid" title={<Link style={{textDecoration:'none', fontWeight:'bold',fontSize:'20px',color:'white'}} to="/">Nemania Borovits</Link> }>
-            <Navigation>              
-              <Link style={{fontWeight:'bold', fontSize:'18px',color:'white'}} to="/resume"><span className="icon"><i className="fa fa-file" aria-hidden="true" /></span><span style={{paddingLeft:'10px'}}>Resume</span></Link>
-              {/*<Link style={{fontWeight:'bold', fontSize:'18px',color:'white'}} to="/aboutme"><span className="icon"><i className="fa fa-user-circle" aria-hidden="true" /></span><span style={{paddingLeft:'10px'}}>About Me</span></Link>*/}
-              {/*<Link style={{fontWeight:'bold', fontSize:'18px',color:'white'}} to="/projects"><span className="icon"><i className="fa fa-check-circle" aria-hidden="true" /></span><span style={{paddingLeft:'10px'}}>Projects</span></Link>*/}
-              <Link style={{fontWeight:'bold', fontSize:'18px',color:'white'}} to="/contact"><span className="icon"><i className="fa fa-envelope-open" aria-hidden="true" /></span><span style={{paddingLeft:'10px'}}>Contact</span></Link>
-            </Navigation> 
-        </Drawer>        
-        
-          <Main/>
-          <Footer/>         
-                
-      </Layout>
-      
-    </div>
-    </HttpsRedirect>
-  );
+  componentDidMount() {
+    // SEO continuity: old routes (/resume, /contact, ...) open the mapped
+    // section instead of 404-ing, and the URL is normalised to a hash.
+    const path = window.location.pathname.replace(/\/+$/, '') || '/';
+    const target = legacyRoutes[path] || (window.location.hash || '').replace('#', '');
+    if (target && sections.some((s) => s.id === target)) {
+      this.setState({ open: target });
+      if (window.history && window.history.replaceState) {
+        window.history.replaceState(null, '', `/#${target}`);
+      }
+    }
+  }
+
+  scrollToBar(id) {
+    window.requestAnimationFrame(() => {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
+
+  // Called by the sidebar nav — always opens the target.
+  openSection(id) {
+    this.setState({ open: id });
+    if (window.history && window.history.replaceState) {
+      window.history.replaceState(null, '', `#${id}`);
+    }
+    this.scrollToBar(id);
+  }
+
+  // Called by a bar click — toggles (clicking the open one collapses it).
+  toggleSection(id) {
+    this.setState((s) => ({ open: s.open === id ? null : id }));
+    if (this.state.open !== id) this.scrollToBar(id);
+  }
+
+  personJsonLd() {
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'Person',
+      name: profile.name,
+      url: SEO.url,
+      jobTitle: 'Researcher, Data Scientist, ML/DL/AI Engineer',
+      worksFor: { '@type': 'Organization', name: 'Tilburg University (JADS)' },
+      knowsAbout: [
+        'Data Science',
+        'Data Engineering',
+        'Machine Learning',
+        'Deep Learning',
+        'Privacy Engineering',
+      ],
+      sameAs: profile.links.filter((l) => l.kind !== 'email').map((l) => l.href),
+    };
+  }
+
+  render() {
+    return (
+      <div className="layout">
+        <Helmet>
+          <title>{SEO.title}</title>
+          <meta name="description" content={SEO.description} />
+          <meta name="keywords" content={SEO.keywords} />
+          <meta name="author" content={SEO.author} />
+          <link rel="canonical" href={SEO.url} />
+          <script type="application/ld+json">{JSON.stringify(this.personJsonLd())}</script>
+        </Helmet>
+
+        <Sidebar openId={this.state.open} onNavigate={this.openSection} />
+        <Main openId={this.state.open} onToggle={this.toggleSection} />
+      </div>
+    );
+  }
 }
 
 export default App;
