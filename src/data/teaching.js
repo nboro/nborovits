@@ -3,10 +3,13 @@ export const services = {
   journals: [
     { name: 'ACM Transactions on Software Engineering and Methodology', years: '2025, 2026' },
     { name: 'The Journal of Systems and Software', years: '2025, 2026' },
-    { name: 'Empirical Software Engineering', years: '2025, 2026' },
+    { name: 'Empirical Software Engineering', years: '2025, 2026' },    
+    { name: 'Future Generation Computer Systems', years: '2025, 2026' },
+    { name: 'Scientific Reports', years: '2025, 2026' },
+    { name: 'Artificial Intelligence Review', years: '2025, 2026' },
     { name: 'Transactions on Services Computing', years: '2026' },
     { name: 'Computers & Security', years: '2026' },
-    { name: 'Future Generation Computer Systems', years: '2025, 2026' },
+    { name: 'npj Digital Medicine', years: '2026' },
   ],
   conferences: [
     { name: 'ICSE 2027 — ACM Student Research Competition (SRC)', role: 'PC member' },
@@ -18,9 +21,10 @@ export const services = {
     { name: 'Data Forensics', context: 'MSc, JADS' },
     { name: 'Natural Language Processing (NLP)', context: 'MSc, JADS' },
     { name: 'Data Mining', context: 'MSc, JADS' },
+    { name: 'Cybersecurity', context: 'MSc, JADS' },
   ],
   supervision:
-    'Co-supervised 16 MSc theses spanning data analytics, data and ML/DL/AI engineering, and privacy engineering.',
+    'Co-supervised 2 EngD candidates and 18 MSc theses spanning data analytics, data and ML/DL/AI engineering, and privacy engineering.',
 };
 
 export default services;
