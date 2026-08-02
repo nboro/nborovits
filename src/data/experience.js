@@ -16,7 +16,7 @@ export const experience = [
   },
   {
     start: '2020',
-    end: 'Nov 2024',
+    end: 'Mar 2026',
     role: 'Data Scientist',
     org: 'KPN — Data Science Lab',
   },

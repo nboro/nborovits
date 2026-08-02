@@ -118,7 +118,7 @@ export const generations = [
   },
   {
     v: '2.0',
-    name: 'Neural NER',
+    name: 'Deep Learning - Named Entity Recognition (NER)',
     sketch: 'ner',
     line: 'Subject matter experts labeled the transcripts; a BERT model fine-tuned on that data outperformed the spaCy, Hugging Face and Stanza baselines and other BERT variants.',
     stack: ['Fine-tuned BERT', 'PyTorch', 'HF Transformers', 'spaCy', 'Stanza NER', 'SME Labels'],

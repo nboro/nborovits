@@ -31,7 +31,7 @@ export const projects = [
   },
   {
     name: 'Product Awareness: From Triplets to Knowledge Graphs',
-    tag: 'NLP · Knowledge Graphs · Telco',
+    tag: 'NLP · Knowledge Graphs · Telco Industry',
     body:
       'End-to-end internal product turning B2B and B2C call center transcripts into a living Neo4j knowledge graph of customer opinion. Extraction evolved from Stanza parsing through fine-tuned BERT NER to agentic GraphRAG with LangGraph.',
     url: '/product-awareness',
