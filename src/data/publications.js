@@ -120,7 +120,7 @@ export const publications = [
     year: 2026,
     title: 'Privacy Engineering: A Systematic Literature Review',
     authors: 'N. Borovits, D. A. Tamburri, W.-J. van den Heuvel',
-    venue: 'arXiv:2606.23696 · 90 studies synthesized (2018–2025)',
+    venue: 'arXiv:2606.23696 · Thematic Synthesis',
     url: 'https://arxiv.org/abs/2606.23696',
   },
   {

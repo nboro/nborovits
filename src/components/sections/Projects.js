@@ -14,9 +14,14 @@ class Projects extends Section {
       <div className="cards">
         {projects.map((p, i) => (
           <article key={i} className="card">
-            <span className="card__tag">{p.tag}</span>
+            {p.tag ? <span className="card__tag">{p.tag}</span> : null}
             <h3 className="card__title">{p.name}</h3>
-            <p className="card__body">{p.body}</p>
+            {p.body ? <p className="card__body">{p.body}</p> : null}
+            {p.url ? (
+              <a className="card__link" href={p.url} target="_blank" rel="noopener noreferrer">
+                View
+              </a>
+            ) : null}
           </article>
         ))}
       </div>

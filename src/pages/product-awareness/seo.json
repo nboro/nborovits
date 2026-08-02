@@ -1,0 +1,35 @@
+{
+  "title": "Nemania Borovits | Product Awareness | Knowledge Graphs | NLP | Machine Learning | Deep Learning | Neo4j | PyTorch | Data Engineering",
+  "description": "Nemania Borovits, PhD. Product Awareness: an end-to-end NLP and data engineering product that turns telco call center transcripts into a living Neo4j knowledge graph of customer opinion. Machine learning and deep learning with fine-tuned BERT in PyTorch; agentic GraphRAG querying with LangGraph.",
+  "keywords": "Nemania Borovits, Product Awareness, Knowledge Graphs, Neo4j, Cypher, NLP, Natural Language Processing, Machine Learning, Deep Learning, PyTorch, BERT, Named Entity Recognition, Stanza, GraphRAG, LangGraph, Agentic RAG, Triplet Extraction, Data Engineering, Opinion Mining",
+  "author": "Nemania Borovits",
+  "canonical": "https://nborovits.com/product-awareness",
+  "ogType": "article",
+  "ogTitle": "Nemania Borovits | Product Awareness: From Triplets to Knowledge Graphs",
+  "ogDescription": "Nemania Borovits, PhD. Telco call center transcripts become a living Neo4j knowledge graph of customer opinion: NLP, deep learning with fine-tuned BERT in PyTorch, and agentic GraphRAG with LangGraph.",
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Product Awareness: From Triplets to Knowledge Graphs",
+    "name": "Product Awareness",
+    "url": "https://nborovits.com/product-awareness",
+    "inLanguage": "en",
+    "description": "End-to-end NLP and data engineering product turning telco call center transcripts into a living Neo4j knowledge graph of customer opinion.",
+    "author": {
+      "@type": "Person",
+      "name": "Nemania Borovits",
+      "url": "https://nborovits.com/"
+    },
+    "about": [
+      { "@type": "Thing", "name": "Natural Language Processing" },
+      { "@type": "Thing", "name": "Machine Learning" },
+      { "@type": "Thing", "name": "Deep Learning" },
+      { "@type": "Thing", "name": "Knowledge Graphs" },
+      { "@type": "Thing", "name": "Neo4j" },
+      { "@type": "Thing", "name": "PyTorch" },
+      { "@type": "Thing", "name": "Data Engineering" },
+      { "@type": "Thing", "name": "GraphRAG" }
+    ],
+    "keywords": "NLP, machine learning, deep learning, PyTorch, BERT, Neo4j, Cypher, knowledge graphs, GraphRAG, LangGraph, Stanza, data engineering"
+  }
+}

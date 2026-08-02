@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import Sidebar from './components/layout/Sidebar';
 import Main from './components/layout/Main';
+import ProductAwareness from './pages/product-awareness/ProductAwareness';
 import { SEO } from './data/seo';
 import { profile } from './data/profile';
 import { sections, legacyRoutes } from './data/navigation';
@@ -16,7 +17,15 @@ class App extends React.Component {
     this.toggleSection = this.toggleSection.bind(this);
   }
 
+  // Paths that render a standalone page instead of the accordion layout.
+  standalonePath() {
+    const path = window.location.pathname.replace(/\/+$/, '') || '/';
+    return path === '/product-awareness' ? path : null;
+  }
+
   componentDidMount() {
+    // Standalone pages keep their own URL; the accordion logic stays out.
+    if (this.standalonePath()) return;
     // SEO continuity: old routes (/resume, /contact, ...) open the mapped
     // section instead of 404-ing, and the URL is normalised to a hash.
     const path = window.location.pathname.replace(/\/+$/, '') || '/';
@@ -71,6 +80,9 @@ class App extends React.Component {
   }
 
   render() {
+    if (this.standalonePath() === '/product-awareness') {
+      return <ProductAwareness />;
+    }
     return (
       <div className="layout">
         <Helmet>
