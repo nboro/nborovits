@@ -38,7 +38,7 @@ class ProductAwareness extends React.Component {
 
         <main className="pa__main">
           <section className="pa__hero">
-            <p className="pa__kicker">Nemania Borovits · Internal Product · NLP · Machine Learning · Knowledge Graphs</p>
+            <p className="pa__kicker">Nemania Borovits · NLP · Machine Learning · Knowledge Graphs</p>
             <h1 className="pa__title">
               Product Awareness
               <span className="pa__subtitle">From Triplets to Knowledge Graphs</span>
