@@ -6,7 +6,7 @@ export const projects = [
     tag: 'Healthcare AI · Horizon Europe',
     body:
       'System architect for an AI-driven platform supporting dementia and frailty care across 38 partners. Reference model, architecture, and AI models deployed into clinical workflows.',
-    url: 'https://doi.org/10.5281/zenodo.19922972',
+    url: 'https://doi.org/10.5281/zenodo.21498556',
   },
   {
     name: 'Synthetic Data Platform',
