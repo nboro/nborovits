@@ -22,6 +22,7 @@ export const services = {
     { name: 'Natural Language Processing (NLP)', context: 'MSc, JADS' },
     { name: 'Data Mining', context: 'MSc, JADS' },
     { name: 'Cybersecurity', context: 'MSc, JADS' },
+    { name: 'Elementary Algorithms & Data Structures', context: 'Pre-Master, Tilburg University' },
   ],
   supervision:
     'Co-supervised 2 EngD candidates and 18 MSc theses spanning data analytics, data and ML/DL/AI engineering, and privacy engineering.',
